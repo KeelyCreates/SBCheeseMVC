@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <title th:text="${title)">My Cheeses</title>
+
+    <link rel="stylesheet" th:href="@{css/styles.css}" />
+    //will need to rely on Thymeleaf syntax to make sure files are properly linked
+
+    <script type="text/javascript" th:src="@{/js/script.js}"></script>
+</head>
+<body>
+
+    <nav th:fragment="navigation">
+        <a href="/chese">List</a>
+        <a href="/cheese/add">Add Cheese Form</a>
+    </nav>
+
+</body>
+</html>
